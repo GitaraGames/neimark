@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Условие задачи</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .time-memory {
+            background-color: #e8f4f8;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        .problem-text {
+            margin-bottom: 25px;
+        }
+        .io-section {
+            margin: 25px 0;
+        }
+        .io-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .examples {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .examples th, .examples td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .examples th {
+            background-color: #f2f2f2;
+        }
+        .copy-indicator {
+            color: #666;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+        .input-output {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+        }
+        .input-output-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .code-block {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>A. Кружок \[0-0]/. Best teacher MAX</h1>
+        </div>
+        <div class="time-memory" align="center">
+            ограничение по времени на тест: 1 секунда<br>
+            ограничение по памяти на тест: 256 Мбайтов
+        </div>
+        
+        <div class="problem-text">
+            <div class="io-title">Условие</div>
+            <p>В кружке олимпиадного программирования, который проходит в лучшей школе мира есть самый лучший учитель Макс (он же Максим, он же Крутой). На первом занятии кружка ученики с Максом договорились время от времени проводить соревнования кто больше решит олимпиадных задач за полтора часа. Сегодня все пришли на занятие кружка, на котором будет такое соревнование. В конце соревнования Максу стали известны баллы каждого участника. Максу необходимо определить 1-го победителя (и подарить ему ноутбук), а так же сколько то призёров (чтобы подарить им по 100 рублей). Призеры - это все участники, которые набрали больше баллов, чем среднее арифметическое баллов всех участников.</p>
+        </div>
+        
+        <div class="io-section">
+            <div class="io-title">Входные данные</div>
+            <p>В первой строке вводится число <i><b>n</b></i> - количество участников соревнования <i><b>(3 ≤ n ≤ 1000)</b></i> В следующих <i><b>n</b></i> строках вводится балл <i><b>n</b></i> того участника</p>
+        </div>
+        
+        <div class="io-section">
+            <div class="io-title">Выходные данные</div>
+            <p>В единственной строке выведите сколько Максу нужно денег, чтобы поздравить всех призёров соревнования (количество призёров нужно умножить на 100 рублей)</p>
+        </div>
+        
+        <div class="input-output">
+            <div class="io-title"><b>Пример</b></div>
+            <div class="input-output-title">Входные данные</div>
+            <div class="code-block">5
+1
+2
+3
+4
+5</div>
+            
+            <div class="input-output-title">Выходные данные</div>
+            <div class="code-block">300</div>
+        </div>
+    </div>
+</body>
+</html>
